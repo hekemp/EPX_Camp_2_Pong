@@ -8,7 +8,7 @@ public class Paddle : MonoBehaviour {
     float height;
 
     string input;
-    bool isRight;
+    public bool isRight;
 
 	// Use this for initialization
 	void Start () {
@@ -46,5 +46,6 @@ public class Paddle : MonoBehaviour {
 
         transform.Translate(move);
 
+        
     }
 }
