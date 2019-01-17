@@ -12,10 +12,10 @@ public class Paddle : MonoBehaviour {
     public void Init(bool isRightPaddle) {
 
         if (isRightPaddle) {
-            transform.position = new Vector2(GameManager.topRight.x, 0);
+            transform.position = new Vector2(GameManager.topRight.x - transform.localScale.x, 0);
         }
         else {
-            transform.position = new Vector2(GameManager.bottomLeft.x, 0);
+            transform.position = new Vector2(GameManager.bottomLeft.x + transform.localScale.x, 0);
         }
 
     }
